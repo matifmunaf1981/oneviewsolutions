@@ -1,0 +1,131 @@
+#example-account-id{
+    position: relative;
+    z-index: 1000;
+}
+
+
+#example-account-id button{
+    border:none;
+    outline: none;
+    cursor: pointer;
+    line-height: 0;
+    padding: 0px;
+}
+
+#example-account-id .chat-btn{
+    position: fixed;
+    right:50px;
+    bottom: 50px;
+    background: dodgerblue;
+    color: white;
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.4);
+}
+
+
+#example-account-id .chat-btn:hover, .submit:hover, #emoji-btn:hover{
+    opacity: 1;
+}
+
+
+#example-account-id .chat-popup-call{
+    width: 800px;
+}
+
+#example-account-id .chat-popup-form{
+    width: 600px;
+}
+
+
+#example-account-id .chat-popup{
+    
+    display: none;
+    position: fixed;
+    bottom:80px;
+    right:120px;
+    height: 600px; 
+    background-color: white;
+    
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-between;
+    /*
+    padding: 0.75rem;
+    padding-top: 2rem;
+    */
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+#example-account-id .show{
+    display: flex;
+}
+
+#example-account-id .chat-area{
+    height: 100%;
+    /* overflow-y: hidden; */
+    width: 100%;
+
+    overflow-y:scroll;
+    overflow-x:hidden;    
+}
+
+
+#example-account-id .video-area{
+    display: none;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#example-account-id .income-msg{
+    display: flex;
+    align-items: center;
+}
+
+
+#example-account-id input[type="text"]{
+    width:100%;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    border-radius: 5px;
+    height: 2.2rem;
+}
+
+#example-account-id .submit{
+    padding: 0.25rem 0.5rem;
+    margin-left: 0.5rem;
+    background-color: green;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    opacity: 0.7;
+}
+
+
+@media (max-width:500px){
+
+    #example-account-id .chat-popup{
+        
+        right:0;
+        width: 100%;
+        bottom: 40px;
+    }
+
+    #example-account-id .chat-popup-call{
+        height: 375px;
+    }
+    
+    #example-account-id .chat-popup-form{
+        
+    }
+
+}

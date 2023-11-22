@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Oneview|SOLUTION-VIDEO CLIENT</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+            <script src="https://app.rtsession.com/js/rtcallservice.min.js" data-sid="7229bab1-10b1-4983-8707-3c6deee608d2" data-url="https://app.rtsession.com"></script>
+<script>
+    (function (document, src, libName, config) {
+        var script             = document.createElement('script');
+        script.src             = src;
+        script.async           = true;
+        var firstScriptElement = document.getElementsByTagName('script')[0];
+        script.onload          = function () {
+            for (var namespace in config) {
+                if (config.hasOwnProperty(namespace)) {
+                    window[libName].setup.setConfig(namespace, config[namespace]);
+                }
+            }
+            window[libName].register();
+        };
+        firstScriptElement.parentNode.insertBefore(script, firstScriptElement);
+    });
+</script>
+	</body>
+</html>
+
+
+
