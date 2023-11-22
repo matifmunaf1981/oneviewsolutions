@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>OVS webExtension</title>
+     <meta name="description" content="Fully featured browser based OVS webExtension">
+     <link rel="icon" href="favicon.ico">
+ 
+ 
+     <script type="text/javascript">
+
+          var web_hook_on_transportError = function (t, ua) {
+               console.warn("web_hook_on_transportError", t, ua);
+          }
+          var web_hook_on_register = function (ua) {
+               console.warn("web_hook_on_register", ua);
+          }
+          var web_hook_on_registrationFailed = function (e) {
+               console.warn("web_hook_on_registrationFailed", e);
+          }
+          var web_hook_on_unregistered = function () {
+               console.warn("web_hook_on_unregistered");
+          }
+          var web_hook_on_invite = function (session) {
+               console.warn("web_hook_on_invite", session);
+          }
+          var web_hook_on_message = function (message) {
+               console.warn("web_hook_on_message", message);
+          }
+          var web_hook_on_modify = function (action, session) {
+               console.warn("web_hook_on_modify", action, session);
+          }
+          var web_hook_on_dtmf = function (item, session) {
+               console.warn("web_hook_on_dtmf", item, session);
+          }
+          var web_hook_on_terminate = function (session) {
+               console.warn("web_hook_on_terminate", session);
+          }
+     </script>
+    </head>
+
+    <body>
+     <script type="text/javascript" src="lib/ovs/index.js"></script>
+ 
+    </body>
+</html>
