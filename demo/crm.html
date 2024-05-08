@@ -8,21 +8,24 @@
   body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; }
   header { background-color: #333; color: white; text-align: center; padding: 10px; }
   footer { background-color: #333; color: white; text-align: center; padding: 10px; position: relative; }
-  .iframe-container { position: fixed; bottom: 10px; right: 100px; width: 900px; height: 200px; display: none; }
+  .iframe-container { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 900px; height: 200px; border: 2px solid #333; display: none; }
   .iframe-container iframe { width: 100%; height: 100%; border: none; }
 </style>
 <script>
 function loadIframe() {
+  var iframeContainer = document.querySelector('.iframe-container');
+  iframeContainer.style.display = 'block'; // Display the iframe container
+
   var iframe = document.getElementById('contact-iframe');
   iframe.src = "index.html?extension=2001&number=2002"; // Set the source for the iframe
-  iframe.style.display = 'block'; // Display the iframe
 }
 </script>
 </head>
 <body>
 
 <header>
-  <h1>Welcome to Our Simple Page</h1>
+  <h1>Welcome to Demo </h1>
+  <h1>Calling from 2002 to 2001</h1>
 </header>
 
 <!-- Content of your page -->
