@@ -159,6 +159,7 @@
             }
             var web_hook_on_terminate = function(session){
                  console.log("web_hook_on_terminate", session);
+		 window.close();
             }
             var web_hook_on_notify = function(ContentType, buddyObj, notify){
                  console.log("web_hook_on_notify", ContentType, buddyObj, notify);
